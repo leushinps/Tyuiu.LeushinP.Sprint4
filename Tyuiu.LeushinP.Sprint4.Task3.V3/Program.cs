@@ -46,7 +46,7 @@ namespace Tyuiu.LeushinP.Sprint4.Task3.V3
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                     *");
             Console.WriteLine("**********************************************************************************");
-
+            Console.WriteLine($"Количество нечётных элементов: {result}");
 
             Console.ReadKey();
         }
