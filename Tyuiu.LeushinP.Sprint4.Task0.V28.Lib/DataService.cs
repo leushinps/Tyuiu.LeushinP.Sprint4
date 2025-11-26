@@ -12,7 +12,7 @@ namespace Tyuiu.LeushinP.Sprint4.Task0.V28.Lib
         public int GetMultEvenArrEl(int[] array)
         {
             int proiz = 1;
-
+            
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 == 0)

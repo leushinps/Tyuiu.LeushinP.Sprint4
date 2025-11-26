@@ -31,7 +31,7 @@ namespace Tyuiu.LeushinP.Sprint4.Task0.V28
 
             Console.WriteLine("Массив: " + array);
 
-
+            
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
