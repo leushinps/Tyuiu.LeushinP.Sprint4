@@ -63,9 +63,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task7", "Task7", "{5CBCBE51
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.LeushinP.Sprint4.Task7.V11", "Tyuiu.LeushinP.Sprint4.Task7.V11\Tyuiu.LeushinP.Sprint4.Task7.V11.csproj", "{84F0E66B-1CE4-4E63-A27E-B2BE5933553D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.LeushinP.Task7.V11.Lib", "Tyuiu.LeushinP.Sprint4.Task7.V11.Lib\Tyuiu.LeushinP.Task7.V11.Lib.csproj", "{7C878F20-EC39-4031-9B23-452A78568D62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.LeushinP.Sprint4.Task7.V11.Lib", "Tyuiu.LeushinP.Sprint4.Task7.V11.Lib\Tyuiu.LeushinP.Sprint4.Task7.V11.Lib.csproj", "{7C878F20-EC39-4031-9B23-452A78568D62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.LeushinP.Task7.V11.Test", "Tyuiu.LeushinP.Sprint4.Task7.V11.Test\Tyuiu.LeushinP.Task7.V11.Test.csproj", "{73894EE0-BA6F-4018-AA07-DADD8C72E78F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.LeushinP.Sprint4.Task7.V11.Test", "Tyuiu.LeushinP.Sprint4.Task7.V11.Test\Tyuiu.LeushinP.Sprint4.Task7.V11.Test.csproj", "{73894EE0-BA6F-4018-AA07-DADD8C72E78F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
