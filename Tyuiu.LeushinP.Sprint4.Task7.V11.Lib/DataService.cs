@@ -1,36 +1,32 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint4;
 namespace Tyuiu.LeushinP.Sprint4.Task7.V11.Lib
 {
-    public class DataService : ISprint4Task7V11
-    {
-        public int Calculate(int n, int m, string value)
+        public class DataService : ISprint4Task7V11
         {
-            // матрица n x m
-            int[,] matrix = new int[n, m];
-
-            // Заполнение из строки 
-            int index = 0;
-            for (int i = 0; i < n; i++)
+            public int Calculate(int n, int m, string value)
             {
-                for (int j = 0; j < m; j++)
+                int[,] mtrx = new int[n, m];
+                for (int i = 0; i < n; i++)
                 {
-                    matrix[i, j] = int.Parse(value[index].ToString());
-                    index++;
-                }
-            }
+                    for (int j = 0; j < m; j++)
+                    {
+                        mtrx[i, j] = int.Parse(value.Substring(i * m + j, 1));
 
-            // ?нечётные
-            int countOdd = 0;
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < m; j++)
+                    }
+                }
+                int count = 0;
+                for (int i = 0; i < n; i++)
                 {
-                    if (matrix[i, j] % 2 != 0)
-                        countOdd++;
-                }
-            }
+                    for (int j = 0; j < m; j++)
+                    {
+                        if (mtrx[i, j] % 2 != 0)
+                        {
+                            count++;
+                        }
 
-            return countOdd;
+                    }
+                }
+                return count;
+            }
         }
     }
-}

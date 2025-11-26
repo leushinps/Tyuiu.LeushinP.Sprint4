@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using Tyuiu.DatskiyDE.Sprint4.Task7.V11.Lib;
+using Tyuiu.LeushinP.Sprint4.Task7.V11.Lib;
 
 
 namespace Tyuiu.LeushinP.Sprint4.Task7.V11.Test
@@ -8,18 +8,16 @@ namespace Tyuiu.LeushinP.Sprint4.Task7.V11.Test
     public class DataServiceTest
     {
         [Test]
-        public void ValidCalculate()
+        public void ValidCalc()
         {
+            int rows = 4;
+            int columns = 2;
+            int[,] mtrx = new int[rows, columns];
+            string str = "56789012";
             DataService ds = new DataService();
-
-            int n = 4;
-            int m = 2;
-            string value = "56789012";
-
-            int result = ds.Calculate(n, m, value);
-            int expected = 4;
-
-            Assert.AreEqual(expected, result);
+            int res = ds.Calculate(rows, columns, str);
+            int wait = 4;
+            Assert.AreEqual(wait, res);
         }
     }
 }

@@ -30,37 +30,29 @@ namespace Tyuiu.LeushinP.Sprint4.Task7.V11
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
+            int index = 0;
 
-            int n = 4;
-            int m = 2;
-            string value = "56789012";
+            Console.WriteLine("\nМассив:");
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    Console.Write($"{str[index]} \t");
+                    index++;
 
-            Console.WriteLine("Количество строк (n): " + n);
-            Console.WriteLine("Количество столбцов (m): " + m);
-            Console.WriteLine("Строка: " + value);
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            int countOdd = ds.Calculate(n, m, value);
+            int res = ds.Calculate(n, m, str);
 
-            Console.WriteLine($"Количество нечётных чисел в матрице {n}x{m}: {countOdd}");
-
-
-            Console.WriteLine("Матрица:");
-            int index = 0;
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < m; j++)
-                {
-                    Console.Write(int.Parse(value[index].ToString()));
-                    if (j < m - 1) Console.Write(" ");
-                    index++;
-                }
-                Console.WriteLine();
-            }
-
+            Console.WriteLine("Количество нечетных элементов = " + res);
             Console.ReadKey();
         }
     }
