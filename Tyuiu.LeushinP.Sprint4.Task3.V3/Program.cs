@@ -1,4 +1,5 @@
 ﻿
+using NUnit.Framework;
 using Tyuiu.LeushinP.Sprint4.Task3.V3.Lib;
 
 
@@ -21,8 +22,8 @@ namespace Tyuiu.LeushinP.Sprint4.Task3.V3
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("* Спринт #4                                                                      *");
             Console.WriteLine("* Тема: Двумерные массивы (статический ввод)                                     *");
-            Console.WriteLine("* Задание #2                                                                     *");
-            Console.WriteLine("* Вариaнт #11                                                                    *");
+            Console.WriteLine("* Задание #3                                                                     *");
+            Console.WriteLine("* Вариaнт #3                                                                     *");
             Console.WriteLine("* Выполнил: Леушин Павел Сергеевич | СМАРТб-25-1                                 *");
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                       *");
@@ -43,9 +44,10 @@ namespace Tyuiu.LeushinP.Sprint4.Task3.V3
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                     *");
             Console.WriteLine("**********************************************************************************");
 
-            int res = ds.GetMinCharCount(input, symbol);
-            Console.WriteLine($"Количество вхождений символа '{symbol}' в строке: {res}");
-            Console.ReadKey();
+            int expected = 14;
+            int actual = ds.Calculate(matrix);
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }

@@ -1,18 +1,21 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using tyuiu.cources.programming.interfaces.Sprint4;
 
 namespace Tyuiu.LeushinP.Sprint4.Task3.V3.Lib
 {
-    public class DataService : ISprint3Task3V3
+    public class DataService : ISprint4Task3V3
     {
-        public int GetMinCharCount(string value, char item)
+        public int Calculate(int[,] array)
         {
             int count = 0;
 
-            foreach (char c in value)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                if (c == item)
+                for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    count++;
+                    if (array[i, j] % 2 != 0)   // проверка на нечётность
+                    {
+                        count++;
+                    }
                 }
             }
 
