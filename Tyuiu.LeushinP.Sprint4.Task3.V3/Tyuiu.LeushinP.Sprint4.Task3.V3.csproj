@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.14.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Tyuiu.LeushinP.Sprint4.Task3.V3.Lib\Tyuiu.LeushinP.Sprint4.Task3.V3.Lib.csproj" />
   </ItemGroup>
 

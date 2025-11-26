@@ -1,5 +1,4 @@
 ﻿
-using NUnit.Framework;
 using Tyuiu.LeushinP.Sprint4.Task3.V3.Lib;
 
 
@@ -33,21 +32,23 @@ namespace Tyuiu.LeushinP.Sprint4.Task3.V3
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                               *");
             Console.WriteLine("**********************************************************************************");
 
-            Console.WriteLine("Введите строку:");
-            string input = Console.ReadLine();
+            Console.WriteLine("Исходный массив:");
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write(matrix[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
 
-            Console.WriteLine("Введите символ для поиска:");
-            char symbol = Convert.ToChar(Console.ReadLine());
-
-
+            int result = ds.Calculate(matrix);
             Console.WriteLine("**********************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                     *");
             Console.WriteLine("**********************************************************************************");
 
-            int expected = 14;
-            int actual = ds.Calculate(matrix);
 
-            Assert.AreEqual(expected, actual);
+            Console.ReadKey();
         }
     }
 }
